@@ -98,3 +98,7 @@ input:focus {
   background-color: yellow;
 
 }
+
+fieldset{
+  margin-top: 20px;
+}

@@ -45,7 +45,7 @@ form.addEventListener('submit', (event) => {
   const pizzaList = document.querySelector('#pizzaList');
   const newOrder = document.createElement('div');
 
-  // format the text 
+  // format the text
   const name = document.createElement('p');
   name.textContent = `name : ${firstName} ${lastName} `
   const addressLine = document.createElement('p');
@@ -67,7 +67,7 @@ form.addEventListener('submit', (event) => {
 
 })
 
-const button = document.querySelector('#button');
+const button = document.querySelector('button');
 
 button.addEventListener('click', ()=> {
   pizzaList.innerHTML = '';
