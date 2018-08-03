@@ -1,6 +1,6 @@
 .orders { margin: 3px; background: #E0E3DA; }
 
-.pizzaList {
+#pizzaList {
   padding: .5vw;
   font-size: 10;
   font-family:

@@ -80,7 +80,7 @@ form.addEventListener('submit', (event) => {
   pizzaLine.textContent = `pizza: ${pizza}  `
   const temperatureLine = document.createElement('p');
   temperatureLine.textContent = `and it will be ${temperature}`
-  newOrder.classList.add("inner")
+  newOrder.classList.add("inner");
   newOrder.appendChild(name);
   newOrder.appendChild(addressLine);
   newOrder.appendChild(pizzaLine);
