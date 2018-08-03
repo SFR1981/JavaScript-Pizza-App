@@ -4,6 +4,7 @@ let firstName = '';
 let lastName = '';
 let address = '';
 let pizza = 'MAN I WANT A PIZZA';
+let temperature = '';
 //this is the refactor and I am seperating each event
 const firstNameInput = document.querySelector('#first_name')
 firstNameInput.addEventListener('input', (event) =>{
@@ -19,9 +20,18 @@ lastNameInput.addEventListener('input', (event) =>{
 })
 
 const addressInput = document.querySelector('#address')
-addressInput.addEventListener.querySelector('input', (event) => {
-  address = event.taget.value;
-}) 
+addressInput.addEventListener('input', (event) => {
+  address = event.target.value;
+})
+
+
+const pizzaInput = document.querySelector('#pizza_type')
+pizzaInput.addEventListener('change', (event) =>{
+  pizza = event.target.value;
+})
+
+// const tempInput = document.querySelector('#temp')
+// tempInput.addEventListener()
 
 
 const form = document.querySelector('#pizza-form');
@@ -33,7 +43,6 @@ form.addEventListener('submit', (event) => {
 
 
 
-   const pizza = event.target.pizza_type.value;
 
 
   newOrder.textContent = `name : ${firstName} ${lastName} address: ${address} pizza: ${pizza}`;

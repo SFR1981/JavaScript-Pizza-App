@@ -28,13 +28,31 @@
 
         <div class="form-item">
           <label for="pizza_type" class="primary">pizza chosen</label>
-          <select id="pizza_type">
+          <select id="pizza_type" required>
             <option value="" disabled selected></option>
             <option value="Pepperoni & Potatoes">Pepperoni & Potatoes</option>
             <option value="Margherita">Margherita</option>
             <option value="Pickled Onions and toothpaste">Pickled Onions and toothpaste</option>
             <option value="Cornflakes surprise">Cornflakes surprise*</option>
           </select>
+        </div>
+        <div class ="form-item">
+          <fieldset>
+        <legend>Is pizza ordered to be HOT or COLD?</legend>
+
+        <div>
+            <input type="radio" id="temp" name="temp"  required/>
+            <label for="hot">Hot</label>
+        </div>
+
+        <div>
+            <input type="radio" id="temp" name="temp" />
+            <label for="cold">Cold</label>
+        </div>
+
+
+
+    </fieldset>
         </div>
       </div>
       <input type="submit" value="save"/>
