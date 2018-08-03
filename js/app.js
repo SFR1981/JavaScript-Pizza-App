@@ -30,20 +30,37 @@ pizzaInput.addEventListener('change', (event) =>{
   pizza = event.target.value;
 })
 
-const tempInput = document.querySelector('#temp')
- tempInput.addEventListener('click', (event) => {
-   temperature = event.target.value
+const tempInput = document.querySelector('fieldset')
+ tempInput.addEventListener('input', (event) => {
+
+   temperature = event.target.value;
  })
+
+
 
 
 const form = document.querySelector('#pizza-form');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const pizzaList = document.querySelector('#pizzaList');
-  const newOrder = document.createElement('li');
-  newOrder.textContent = `name : ${firstName} ${lastName} address: ${address} pizza: ${pizza}
-  and it will be ${temperature}`;
+  const newOrder = document.createElement('div');
+  const name = document.createElement('p');
+  name.textContent = `name : ${firstName} ${lastName} `
+  const addressLine = document.createElement('p');
+  addressLine.textContent = `address: ${address} `
+  const pizzaLine = document.createElement('p');
+  pizzaLine.textContent = `pizza: ${pizza}   `
+  const temperatureLine = document.createElement('p');
+  temperatureLine.textContent = `and it will be ${temperature}`
+  //newOrder.classList.add("inner")
+  newOrder.appendChild(name);
+  newOrder.appendChild(addressLine);
+  newOrder.appendChild(pizzaLine);
+  newOrder.appendChild(temperatureLine);
   pizzaList.appendChild(newOrder);
+
+
+
   form.reset();
 
 })

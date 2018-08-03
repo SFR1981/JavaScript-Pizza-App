@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>CodeClan Pizza Orders</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/structure.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <script src="js/app.js"></script>
   </head>
   <body>
@@ -31,7 +32,7 @@
           <select id="pizza_type" required>
             <option value="" disabled selected></option>
             <option value="Pepperoni & Potatoes">Pepperoni & Potatoes</option>
-            <option value="Margherita">Margherita</option>
+            <option value="Pizza Margherita">Pizza Margherita</option>
             <option value="Pickled Onions and toothpaste">Pickled Onions and toothpaste</option>
             <option value="Cornflakes surprise">Cornflakes surprise*</option>
           </select>
@@ -41,12 +42,12 @@
         <legend>Is pizza ordered to be HOT or COLD?</legend>
 
         <div>
-            <input type="radio" id="temp" name="temp"  value = "hot"required/>
+            <input type="radio" id="temp" name="temp"  value = "hot" required/>
             <label for="hot">Hot</label>
         </div>
 
         <div>
-            <input type="radio" id="temp" name="temp" value ="cold" />
+            <input type="radio" id="temp" name="temp" value = "cold" />
             <label for="cold">Cold</label>
         </div>
 
@@ -61,7 +62,15 @@
     <h6>*the surprise is it's weetabix</h6>
 
     <h1>Pizza Order List</h1>
-    <div id="pizzas"><ul id="pizzaList"> </ul></div>
+
+
+<section class = "orders">
+
+    
+      <section id="pizzaList"> </section>
+
+    </section>
+  </section>
       <input type='submit' id = "button" value="clear list"/>
 
 

@@ -1,0 +1,80 @@
+body {
+    background-color: #E0E3DA;
+    font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+
+
+
+
+.orders div {
+ text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+
+
+.dropdown-content a:hover {background-color: #f4f5f9}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #f49c20;
+}
+
+.image_add {
+    height: auto;
+    max-width: 50%;
+    object-fit: cover;
+}
+
+.image_user {
+    height: auto;
+    max-width: 20%;
+    object-fit: cover;
+
+
+}
+
+.image_main img{
+    height: auto;
+    max-width: 15%;
+    object-fit: cover;
+}
+
+.image_item {
+    height: auto;
+    max-width: 40%;
+    object-fit: cover;
+}
+
+.main_button {
+background-color: #f49c20;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.new {
+font-size:
+
+}
+
+.little_photo {
+    height: auto;
+    max-width: 5%;
+}
