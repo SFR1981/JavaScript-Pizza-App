@@ -3,78 +3,98 @@ body {
     font-family: "Trebuchet MS", Helvetica, sans-serif
 }
 
+h1 {
+   text-align: center;
+   color: #a8a8a8;
+   text-shadow(1px 1px 0 rgba(white, 1));
+
+}
+
+h2 {
+  text-align: center;
+  color: #a8a8a8;
+  text-shadow(1px 1px 0 rgba(white, 1));
+  display:inline-block;
+  margin-top: 100px;
+
+}
+
+
+img {
+  float: right;
+  display: block;
+  /* position: relative; */
+  width: 20%;
+  height: auto;
+  margin: 1em;
+  flex-grow: 1;
+  max-width: 35vw;
+
+  border-style: solid;
+  margin: none;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition-duration: 8s;
+
+}
+
+#button{
+  background: #0066A2;
+
+color: white;
+
+border-style: outset;
+
+border-color: #0066A2;
+
+height: 50px;
+
+width: 100px;
+
+font: bold 15px arial, sans-serif;
+
+text-shadow:none;
 
 
 
+}
+
+form {
+   max-width: 600px;
+   text-align: left;
+   margin: 20px auto;
+
+  }
 
 .orders div {
  text-align: center;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+
+
+.form-item {
+  width: 30%
 
 }
 
+input{
+ border:0; outline:0;
+ padding: 1em;
+ float: left;
+ width: 20%;
+ margin-bottom: 1em;
+ border-radius(8px);
+  display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family:  sans-serif;
+     @include box-shadow(0 1px 1px rgba(black, 0.1));
+     resize: none;
 
+    }
+input:focus {
+  background-color: yellow;
 
-.dropdown-content a:hover {background-color: #f4f5f9}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #f49c20;
-}
-
-.image_add {
-    height: auto;
-    max-width: 50%;
-    object-fit: cover;
-}
-
-.image_user {
-    height: auto;
-    max-width: 20%;
-    object-fit: cover;
-
-
-}
-
-.image_main img{
-    height: auto;
-    max-width: 15%;
-    object-fit: cover;
-}
-
-.image_item {
-    height: auto;
-    max-width: 40%;
-    object-fit: cover;
-}
-
-.main_button {
-background-color: #f49c20;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-
-.new {
-font-size:
-
-}
-
-.little_photo {
-    height: auto;
-    max-width: 5%;
 }

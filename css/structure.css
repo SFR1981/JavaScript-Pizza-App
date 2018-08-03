@@ -28,7 +28,19 @@
 }
 
 
+#pizzas {
+  padding: .5vw;
+  font-size: 10;
+  font-family:
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
 
+}
 
 
 @media screen and (max-width: 400px) {

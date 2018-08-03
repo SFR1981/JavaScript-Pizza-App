@@ -44,15 +44,17 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   const pizzaList = document.querySelector('#pizzaList');
   const newOrder = document.createElement('div');
+
+  // format the text 
   const name = document.createElement('p');
   name.textContent = `name : ${firstName} ${lastName} `
   const addressLine = document.createElement('p');
   addressLine.textContent = `address: ${address} `
   const pizzaLine = document.createElement('p');
-  pizzaLine.textContent = `pizza: ${pizza}   `
+  pizzaLine.textContent = `pizza: ${pizza}  `
   const temperatureLine = document.createElement('p');
   temperatureLine.textContent = `and it will be ${temperature}`
-  //newOrder.classList.add("inner")
+  newOrder.classList.add("inner")
   newOrder.appendChild(name);
   newOrder.appendChild(addressLine);
   newOrder.appendChild(pizzaLine);
