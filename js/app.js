@@ -8,15 +8,15 @@ form.addEventListener('submit', (event) => {
   const pizzaList = document.querySelector('#pizzaList');
   const newOrder = document.createElement('li');
 
-  const firstName = event.target.first-name.value;
-   const lastName = event.target.last-name.value;
+  const firstName = event.target.first_name.value;
+   const lastName = event.target.last_name.value;
    const address = event.target.address.value;
-   const pizza = event.target.pizza-type.value;
+   const pizza = event.target.pizza_type.value;
 
 
-   newOrder.textContent = `name : ${firstName} ${lastName} address: ${address} pizza: ${pizza}`
-
-  // bookslist.appendChild(newBook);
+  newOrder.textContent = `name : ${firstName} ${lastName} address: ${address} pizza: ${pizza}`;
+   console.log(newOrder);
+  pizzaList.appendChild(newOrder);
   form.reset();
 
 
@@ -25,7 +25,7 @@ form.addEventListener('submit', (event) => {
 const button = document.querySelector('#button');
 console.dir(button);
 button.addEventListener('click', ()=> {
-  bookslist.innerHTML = '';
+  pizzaList.innerHTML = '';
 
 })
 
