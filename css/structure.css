@@ -1,6 +1,6 @@
 .orders { margin: 3px; background: #E0E3DA; }
 
-#pizzaList {
+.pizzaList {
   padding: .5vw;
   font-size: 10;
   font-family:
@@ -22,25 +22,13 @@
   margin: none;
 }
 
-#pizzaList img {
+.pizzaList img {
   width: 100%;
   height: 80%;
 }
 
 
-#pizzas {
-  padding: .5vw;
-  font-size: 10;
-  font-family:
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  display: -webkit-box;
-  display: flex;
 
-}
 
 
 @media screen and (max-width: 400px) {
