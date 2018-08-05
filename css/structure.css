@@ -1,4 +1,4 @@
-.orders { margin: 3px; background: #E0E3DA; }
+.orders { margin: 3px; background: #A3daff; }
 
 #pizzaList {
   padding: .5vw;
@@ -20,6 +20,7 @@
 
   border-style: dashed;
   margin: none;
+  background:#03a6ff;
 }
 
 .pizzaList img {

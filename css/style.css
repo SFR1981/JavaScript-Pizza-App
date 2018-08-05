@@ -1,21 +1,32 @@
 body {
-    background-color: #E0E3DA;
-    font-family: "Trebuchet MS", Helvetica, sans-serif
+    background-color: #A3daff;
+
+    font-family: 'Syncopate', sans-serif;
 }
 
 h1 {
    text-align: center;
-   color: #a8a8a8;
-   text-shadow(1px 1px 0 rgba(white, 1));
+   color: #1e2022; /* 0080ff;*/
+    text-shadow: 0 0 3px #f1404b;
+   font-family: 'Libre Barcode 39 Extended Text', cursive;
+   font-size: 4vw;
 
 }
 
 h2 {
   text-align: center;
-  color: #a8a8a8;
+  color: #0080ff;
   text-shadow(1px 1px 0 rgba(white, 1));
   display:inline-block;
   margin-top: 100px;
+
+}
+
+#description {
+
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 3vw;
+
 
 }
 
