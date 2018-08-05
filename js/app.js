@@ -3,40 +3,40 @@ document.addEventListener('DOMContentLoaded', () => {
 let firstName = '';
 let lastName = '';
 let address = '';
-let pizza = 'MAN I WANT A PIZZA';
+let pizza = '';
 let temperature = '';
  let description = document.querySelector('#description');
 //this is the refactor and I am seperating each event
-
-const firstNameInput = document.querySelector('#first_name');
-firstNameInput.addEventListener('input', (event) =>{
-  console.log(event.target.value);
-
-  firstName = event.target.value;
-
-});
-
-const lastNameInput = document.querySelector('#last_name');
-lastNameInput.addEventListener('input', (event) =>{
-    lastName = event.target.value;
-});
-
-const addressInput = document.querySelector('#address');
-addressInput.addEventListener('input', (event) => {
-  address = event.target.value;
-});
-
-
-const pizzaInput = document.querySelector('#pizza_type');
-pizzaInput.addEventListener('change', (event) =>{
-  pizza = event.target.value;
-});
-
-const tempInput = document.querySelector('fieldset')
- tempInput.addEventListener('input', (event) => {
-
-   temperature = event.target.value;
- });
+//
+// const firstNameInput = document.querySelector('#first_name');
+// firstNameInput.addEventListener('input', (event) =>{
+//   console.log(event.target.value);
+//
+//   firstName = event.target.value;
+//
+// });
+//
+// const lastNameInput = document.querySelector('#last_name');
+// lastNameInput.addEventListener('input', (event) =>{
+//     lastName = event.target.value;
+// });
+//
+// const addressInput = document.querySelector('#address');
+// addressInput.addEventListener('input', (event) => {
+//   address = event.target.value;
+// });
+//
+//
+// const pizzaInput = document.querySelector('#pizza_type');
+// pizzaInput.addEventListener('change', (event) =>{
+//   pizza = event.target.value;
+// });
+//
+// const tempInput = document.querySelector('fieldset')
+//  tempInput.addEventListener('input', (event) => {
+//
+//    temperature = event.target.value;
+//  });
 
  const margheritaHover = document.querySelector('#margherita');
  margheritaHover.addEventListener('mouseover', ()=> {
@@ -70,8 +70,14 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   const pizzaList = document.querySelector('#pizzaList');
   const newOrder = document.createElement('div');
+  const firstName = event.target.first_name.value;
+  const lastName = event.target.last_name.value;
+  const address = event.target.address.value;
+  const pizza = event.target.pizza_type.value;
+  const temperature = event.target.temp.value;
 
-  // format the text
+
+  // format the text in the div to append to
   const name = document.createElement('p');
   name.textContent = `name : ${firstName} ${lastName} `
   const addressLine = document.createElement('p');
