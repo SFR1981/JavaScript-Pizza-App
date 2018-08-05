@@ -21,7 +21,7 @@ let temperature = '';
  const onionHover = document.querySelector('#onions');
  onionHover.addEventListener('mouseover', ()=> {
 
-   description.textContent = "Onions and toothpaste: all of the zing of onions with cool refreshing toothpaste";
+   description.textContent = "Pickled onions and toothpaste: all of the zing of onions with cool refreshing toothpaste";
  });
 
  const cornflakeHover = document.querySelector('#weetabix');
