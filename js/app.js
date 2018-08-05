@@ -6,43 +6,17 @@ let address = '';
 let pizza = '';
 let temperature = '';
  let description = document.querySelector('#description');
-//this is the refactor and I am seperating each event
-//
-// const firstNameInput = document.querySelector('#first_name');
-// firstNameInput.addEventListener('input', (event) =>{
-//   console.log(event.target.value);
-//
-//   firstName = event.target.value;
-//
-// });
-//
-// const lastNameInput = document.querySelector('#last_name');
-// lastNameInput.addEventListener('input', (event) =>{
-//     lastName = event.target.value;
-// });
-//
-// const addressInput = document.querySelector('#address');
-// addressInput.addEventListener('input', (event) => {
-//   address = event.target.value;
-// });
-//
-//
-// const pizzaInput = document.querySelector('#pizza_type');
-// pizzaInput.addEventListener('change', (event) =>{
-//   pizza = event.target.value;
-// });
-//
-// const tempInput = document.querySelector('fieldset')
-//  tempInput.addEventListener('input', (event) => {
-//
-//    temperature = event.target.value;
-//  });
+ let originalDescription  = "Check out our pizzas. Please. They need to be tested on someone!";
+
+
 
  const margheritaHover = document.querySelector('#margherita');
  margheritaHover.addEventListener('mouseover', ()=> {
 
    description.textContent = "The Margherita: the first one we could think of! It's an oldy but a goody! Sometimes";
 });
+
+
 
  const onionHover = document.querySelector('#onions');
  onionHover.addEventListener('mouseover', ()=> {
@@ -60,6 +34,26 @@ let temperature = '';
  potatoHover.addEventListener('mouseover', ()=> {
 
    description.textContent = "Ah! Potatoes and Pepperoni: strongly recommended to be eaten hot and not cold";
+ });
+
+ margheritaHover.addEventListener('mouseleave', ()=> {
+   description.textContent = originalDescription;
+
+ });
+
+onionHover.addEventListener('mouseleave', ()=> {
+   description.textContent = originalDescription;
+
+ });
+
+ cornflakeHover.addEventListener('mouseleave', ()=> {
+   description.textContent = originalDescription;
+
+ });
+
+ potatoHover.addEventListener('mouseleave', ()=> {
+   description.textContent = originalDescription;
+
  });
 
 
@@ -86,11 +80,12 @@ form.addEventListener('submit', (event) => {
   pizzaLine.textContent = `pizza: ${pizza}  `
   const temperatureLine = document.createElement('p');
   temperatureLine.textContent = `and it will be ${temperature}`
-  newOrder.classList.add("inner");
+  // append to new order
   newOrder.appendChild(name);
   newOrder.appendChild(addressLine);
   newOrder.appendChild(pizzaLine);
   newOrder.appendChild(temperatureLine);
+  // append the new order to the list
   pizzaList.appendChild(newOrder);
 
 
